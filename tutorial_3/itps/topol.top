@@ -1,0 +1,18 @@
+#include "martini.itp"
+
+[ system ]
+; name
+Protein in INSANE! Membrane UpperLeaflet>POPC:POPE:CDL2=60.0:38.0:12.0 LowerLeaflet>POPC:POPE:POPI=55.0:21.0:24.0
+
+[ molecules ]
+; name  number
+Protein        1
+POPC           139
+POPE            88
+CDL2            27
+POPC           140
+POPE            53
+POPI            61
+W            10399
+NA             173
+CL             115
