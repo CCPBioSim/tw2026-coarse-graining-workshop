@@ -96,9 +96,6 @@ jobs:
         run: |
           docker run -t ghcr.io/${{ vars.ORG_REPO }}/${{ github.event.repository.name }}@${{ steps.build.outputs.digest }} bash -c " \
             pip install pytest nbmake; \
-            cd data; \
-            pdb2pqr30 2oz2.pdb 2oz2.pqr --pdb-output 2oz2_pqr.pdb --ffout AMBER --titration-state-method propka; \
-            cd ..; \
             find . -name '*.ipynb' | pytest --nbmake --nbmake-timeout=3600;"
 
       - name: Export digest
