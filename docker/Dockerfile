@@ -27,7 +27,7 @@ RUN pip install --no-cache-dir \
 
 # Clone workshop contents
 COPY --chown=1000:100 . .
-RUN rm -rf README.md
+RUN rm -rf README.md docker .git .github
 
 # Copy lab workspace
 #COPY --chown=1000:100 docker/default-37a8.jupyterlab-workspace /home/jovyan/.jupyter/lab/workspaces/default-37a8.jupyterlab-workspace
