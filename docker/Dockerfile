@@ -20,7 +20,7 @@ RUN pip install --no-cache-dir \
     mdtraj==1.11.1.post2 \
     vermouth==0.15.0 \
     insane==1.2.0 \
-    setuptools<82 \
+    "setuptools<82" \
     pylipid==1.5.14 \
     CG2AT-lite==0.3.1
 
