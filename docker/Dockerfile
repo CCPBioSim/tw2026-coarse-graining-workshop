@@ -11,6 +11,7 @@ WORKDIR $HOME
 # Install workshop deps
 RUN conda install -y -c conda-forge \
     conda-forge::matplotlib=3.10.8 \
+    conda-forge::mdanalysis=2.10.0 \
     conda-forge::numpy=2.5.3 \
     conda-forge::nglview=4.0.1 \
     conda-forge::ipywidgets=8.1.8 \
@@ -19,6 +20,7 @@ RUN pip install --no-cache-dir \
     mdtraj==1.11.1.post2 \
     vermouth==0.15.0 \
     insane==1.2.0 \
+    "setuptools<82" \
     pylipid==1.5.14 \
     CG2AT-lite==0.3.1
 
