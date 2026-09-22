@@ -24,6 +24,11 @@ RUN pip install --no-cache-dir \
     pylipid==1.5.14 \
     CG2AT-lite==0.3.1
 
+RUN curl -sL -o /tmp/pylipid-1.6.0.tar.gz \
+    https://github.com/pstansfeld/PyLipID/archive/refs/tags/v1.6.0.tar.gz \
+    && pip install --no-cache-dir /tmp/pylipid-1.6.0.tar.gz \
+    && rm /tmp/pylipid-1.6.0.tar.gz
+
 #COPY docker/fix-nglview.sh /tmp/fix-nglview.sh
 #RUN bash /tmp/fix-nglview.sh
 
