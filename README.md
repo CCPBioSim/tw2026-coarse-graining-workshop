@@ -14,6 +14,8 @@ We have separated the content into tutorial notebooks:
 
 The user should work sequentially through each numbered directory within this repository, starting from tutorial_1
 
+The in-notebook visualisation was created with the help of Claude, but if working locally would work much better in something such as VMD.
+
 This tutorial is inspired by the previous Coarse-graining workshop, run by Robert Clark and Iain Peter Shand Smith, in combination with those found on the [Martini tutorial section](https://cgmartini.nl/docs/tutorials/Martini3/tutorials.html). 
 
 The work that inspired the system studied in these tutorials can be found here:
